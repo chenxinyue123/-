@@ -1,0 +1,234 @@
+/*Demo styles */
+ html,body{
+     background: url("../img/onebg.jpg");
+    position:relative;
+    height: 100%;
+}
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide{
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+/*---音乐---*/
+#music{
+    /*background:mediumturquoise;*/
+    width:60px;
+    height:60px;
+    /*border: 2px solid black;*/
+    position:fixed;
+    right: 2%;
+    top:2%;
+    z-index:9;
+}
+#music .musicbg{
+    width: 60px;
+    height: 60px;
+}
+#music .musicImg{
+    position:absolute;
+    /*top:8px;*/
+    /*right: 8px;*/
+    top: -3px;
+    right: 1px;
+    animation: music 4s linear infinite;   /*linear 匀速  infinite 循环*/
+}
+@keyframes music {
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/*三角*/
+.swiper-button-next{
+    position: absolute;
+    bottom: 2%;
+    left: 47%;
+    top: auto;
+    transform:rotateZ(-90deg);
+    animation:run 1s linear infinite;
+}
+@keyframes run {
+    from{
+        bottom:1%;
+        opacity: 1;
+    }
+    to{
+        bottom: 5%;
+        opacity: 0;
+    }
+}
+
+/*第一屏开始*/
+/*头部*/
+.swiper-slide.one{
+    background: url("../img/onebg.jpg");
+    background-size:100% 100%;
+    position: relative;
+}
+.swiper-slide.one .top{
+    width: 70%;
+    height:50%;
+    border: 10px solid white;
+    position: absolute;
+    top: 5%;
+    left:13%;
+    margin: 0 auto;
+    /*margin-top:10%;*/
+    overflow:hidden;
+}
+.swiper-slide.one .top img{
+    width: 100%;
+}
+/*中间*/
+.swiper-slide.one .center{
+    width: 76%;
+    height:25%;
+    /*border: 1px solid black;*/
+    position: absolute;
+    top:63%;
+    left:13%;
+    margin: 0 auto;
+    /*margin-top: 15%;*/
+    overflow:hidden;
+}
+.swiper-slide.one .center .left{
+    width: 40%;
+    height: 68%;
+    right: 59%;
+    top:-5%;
+   position: absolute;
+}
+.swiper-slide.one .center .right{
+   margin-top: 2%;
+    width: 104%;
+    height: 94%;
+}
+
+/*底部*/
+.swiper-slide.one .bottom{
+    width: 76%;
+    height:9%;
+    /*border: 1px solid black;*/
+    position: absolute;
+    top:89%;
+    left:13%;
+    margin: 0 auto;
+    /*margin-top: 15%;*/
+    overflow:hidden;
+}
+.swiper-slide.one .bottom p{
+    margin-top: 1%;
+    font-family: Gautami;
+    font-size: 223%;
+    color: white;
+}
+/*第一屏结束*/
+/*第二屏开始*/
+/*头部*/
+.swiper-slide.two{
+    background: url("../img/twobg.jpg");
+    background-size:100% 100%;
+    position: relative;
+}
+
+.swiper-slide.two .top{
+    width: 77%;
+    height:33%;
+    border: 10px solid white;
+    position: absolute;
+    top: 1%;
+    left:9%;
+    /*margin-top:10%;*/
+    overflow:hidden;
+}
+.swiper-slide.two .top .one{
+    width: 100%;
+}
+/*中间*/
+.swiper-slide.two .center{
+    width: 77%;
+    height:30%;
+    border: 10px solid white;
+    position: absolute;
+    top: 35%;
+    left:9%;
+    /*margin-top:10%;*/
+    overflow:hidden;
+}
+.swiper-slide.two .center .two{
+    width: 100%;
+}
+/*底部*/
+.swiper-slide.two .bottom{
+    width: 77%;
+    height:30%;
+    border: 10px solid white;
+    position: absolute;
+    top: 67%;
+    left:9%;
+    /*margin-top:10%;*/
+    overflow:hidden;
+}
+.swiper-slide.two .bottom .three{
+    width: 100%;
+}
+/*第二屏结束*/
+/*第三屏开始*/
+.swiper-slide.three{
+    background: url("../img/three.jpg");
+    background-size:100% 100%;
+    position: relative;
+}
+.swiper-slide.three .top{
+    width: 77%;
+    height:8%;
+    /*border: 10px solid white;*/
+    position: absolute;
+    top: 11%;
+   right:29%;
+}
+.swiper-slide.three .top img{
+    width: 151%;
+}
+.swiper-slide.three .center{
+    width: 107%;
+    height:10%;
+    /*border: 1px solid white;*/
+    position: absolute;
+    top: 23%;
+    right:6%;
+}
+.swiper-slide.three .center img{
+    width: 153%;
+}
+/*第三屏结束*/
+/*第四屏开始*/
+
